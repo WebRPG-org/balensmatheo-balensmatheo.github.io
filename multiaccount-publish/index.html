@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Multiaccount Publish</title>
+    <meta name="description" content="Private tool that prepares short videos and posts them to its owner's own TikTok account." />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --ground: #ffffff;
+        --ink: #14161a;
+        --muted: #55606e;
+        --line: #e3e7ec;
+        --accent: #b02a4a;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --ground: #0f1319;
+          --ink: #eceff3;
+          --muted: #9aa5b3;
+          --line: #242c37;
+          --accent: #f5738f;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 56px 16px 72px;
+        background: var(--ground);
+        color: var(--ink);
+        font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+      main { max-width: 42rem; margin: 0 auto; }
+      h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 4px; text-wrap: balance; }
+      .tagline { color: var(--muted); margin: 0 0 40px; }
+      h2 { font-size: 1.05rem; letter-spacing: 0.02em; text-transform: uppercase; color: var(--muted); margin: 36px 0 10px; }
+      p { margin: 0 0 14px; }
+      ul { margin: 0 0 14px; padding-left: 20px; }
+      li { margin-bottom: 6px; }
+      footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 20px; }
+      a { color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Multiaccount Publish</h1>
+      <p class="tagline">A private tool that prepares short videos and posts them to its owner's own TikTok account.</p>
+
+      <h2>What it does</h2>
+      <p>
+        The owner supplies a source video they are entitled to use. The tool retrieves it, analyses it, selects a
+        passage, renders a vertical subtitled clip of at most ninety seconds, and lets the owner review the result
+        before anything leaves the machine.
+      </p>
+      <p>
+        Once a clip is approved, the tool sends it to the owner's own TikTok account through the official Content
+        Posting API. Nothing is sent without an explicit order placed by the owner, and no publication is ever
+        reported as successful without proof returned by the platform.
+      </p>
+
+      <h2>Who it is for</h2>
+      <p>
+        One person: the owner of the account it posts to. There is no sign-up, no second user, and no service offered
+        to anyone else. Access is limited to a single administrator account.
+      </p>
+
+      <h2>What it does not do</h2>
+      <ul>
+        <li>It does not post on behalf of third parties, and it manages no account other than the owner's own.</li>
+        <li>It does not publish automatically on a schedule of its own: every send is ordered by the owner.</li>
+        <li>It does not sell, share or transfer any data to anyone.</li>
+      </ul>
+
+      <footer>
+        <a href="./terms.html">Terms of Service</a>
+        <a href="./privacy.html">Privacy Policy</a>
+      </footer>
+    </main>
+  </body>
+</html>
